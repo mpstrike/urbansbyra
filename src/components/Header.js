@@ -46,7 +46,7 @@ const Header = () => {
 
 
      <div className="right-nav">
-     <span>Tel: +46 70-000 00 00</span>
+     <span>marcusurbanpersson@gmail.com</span>
         
         <Link href="/kontakt">Kontakt</Link>
         

@@ -19,8 +19,7 @@ const Footer = () => {
     <div className="footer-wrap">
 
     <div className="left-footer">
-        <p>Adress: Gyrogatan 5, Örebro</p>
-        <p>Mail: Nogot12345@gmail.com</p>
+        <p>Mail: marcusurbanpersson@gmail.com</p>
     </div>
 
      <ul>

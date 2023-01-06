@@ -6,10 +6,13 @@ import { client } from '../ApolloClientConfig';
 const getHomeCommonData = async () => {
 const HomeCommonData = await client.query({
 query: gql` query homepageQuery {
-    homepage: pageBy(uri: "http://localhost/") {
+    homepage: pageBy(uri: "https://urbanswebb.se/") {
       frontImage {
         frontimage
         frontimg {
+          sourceUrl
+        }
+        frontimgt {
           sourceUrl
         }
         texttwo
@@ -39,19 +42,13 @@ query: gql` query homepageQuery {
 
 
 
-    aboutpage: pageBy(uri: "http://localhost/urbanstema/about") {
+    aboutpage: pageBy(uri: "https://urbanswebb.se/about") {
      
       aboutpages {
         titleabout
         titleasec
         abouttextsec
         textarea
-        aimgsec {
-          sourceUrl
-        }
-        aimgone {
-          sourceUrl
-        }
       }
       seo {
         title
@@ -59,7 +56,7 @@ query: gql` query homepageQuery {
     }
   
 
-    portpage: pageBy(uri: "http://localhost/urbanstema/portfolio") {
+    portpage: pageBy(uri: "https://urbanswebb.se/portfolio") {
       portpages {
         porttitle
         porttiltesec
@@ -81,36 +78,24 @@ query: gql` query homepageQuery {
        }
   
 
-    tjanstpage: pageBy(uri: "http://localhost/urbanstema/tjanster") {
+    tjanstpage: pageBy(uri: "https://urbanswebb.se/kunskaper") {
       aboutpages {
         titleabout
         titleasec
         abouttextsec
         textarea
-        aimgsec {
-          sourceUrl
-        }
-        aimgone {
-          sourceUrl
-        }
       }
       seo {
         title
       }
     }
 
-    contactpage: pageBy(uri: "http://localhost/urbanstema/contact") {
+    contactpage: pageBy(uri: "https://urbanswebb.se/contact") {
       aboutpages {
         titleabout
         titleasec
         abouttextsec
         textarea
-        aimgsec {
-          sourceUrl
-        }
-        aimgone {
-          sourceUrl
-        }
       }
       seo {
         title

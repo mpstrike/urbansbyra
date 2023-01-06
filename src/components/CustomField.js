@@ -10,6 +10,9 @@ const CustomField = ({customData}) => {
     backgroundImage:`url(${customData.frontimg.sourceUrl})`
             };
     
+   const myStyleT={
+     backgroundImage:`url(${customData.frontimgt.sourceUrl})`
+            };
 
     return (
 
@@ -34,10 +37,10 @@ const CustomField = ({customData}) => {
 
                 <div className="wrap-call">
                   <div className="Tk">
-                   <Link href="/tjanster">Läs mer</Link>
+                   <Link href="/kunskaper">Läs mer</Link>
                    </div>
                    <div className="Kt">
-                   <Link href="/kontakt">Boka möte</Link>
+                   <Link href="/kontakt">Kontakta mig</Link>
                    </div>
                 </div>
 
@@ -77,15 +80,21 @@ const CustomField = ({customData}) => {
 
 
 
-<div className="tre-sections">
+<div className="tre-sections" style={myStyleT}>
 
 <div className="tre-contain">
 
 <div className="wrap-title-tre">
 
-
 <h2 className="tile-sec">{customData.texttre}</h2>
          <p className="p-sec">{customData. texttwotre}</p>
+
+         <div className="wrap-link-front">
+<a href="#" className="lock">Till hemsidan</a>
+  <Link href="/portfolio" className="loock">Till portfolio</Link>
+  
+
+  </div>
 
 </div>
 
@@ -96,7 +105,9 @@ const CustomField = ({customData}) => {
  <img src={customData.imgfour.sourceUrl} alt="frontimg"/>
  </div>
 
- <div className="p-tre-wrap">
+ <div className="p-tre-wrap f">
+
+
 
  <p className="p-sec">{customData.textfour}</p>
  </div>

@@ -32,21 +32,18 @@ const AboutField = ({AcustomData}) => {
          <div className="sec-contain-a">
           <div className="wrap-title-sec">
 
-
+        <div className="wrap-info-a">
          <h2 className="tile-sec">{AcustomData.titleasec}</h2>
+         
+         </div>
+
+         <div className="wrap-secinfo">
          <p className="p-sec">{AcustomData.abouttextsec}</p>
-
          <div className="p-sec-a" dangerouslySetInnerHTML={{__html: AcustomData.textarea }}/> <div/>
-
+         </div>
             </div>
 
-            <div className="wrap-image-sec">
-
-<div className="img-one">
-<img src={AcustomData.aimgone.sourceUrl} alt="frontimg"/>
-</div>
-
-</div>
+          
 
 
          </div>

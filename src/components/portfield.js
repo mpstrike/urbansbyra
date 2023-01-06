@@ -3,17 +3,17 @@ import Link from "next/link";
 
 const PortField = ({PcustomData}) => {
 
-{ /*
+ 
     const myStyleP={
         backgroundImage:`url(${PcustomData.portimgsec.sourceUrl})`
                 };
  
 
-                const myStylePtwo={
-                    backgroundImage:`url(${PcustomData. portimgtwo.sourceUrl})`
-                            };
+    const myStylePtwo={
+        backgroundImage:`url(${PcustomData. portimg.sourceUrl})`
+                };
 
-                        */ }
+   
     
 
     return (
@@ -47,61 +47,78 @@ const PortField = ({PcustomData}) => {
 <div className="port-container">
        
 
-<div className="tre-sections-p">
+<div className="tre-sections-p" style={myStylePtwo}>
 
-<div className="tre-contain">
-
-<div className="wrap-title-tre">
+<div className="tre-contain p" >
 
 
-<h2 className="tile-sec">{PcustomData.porttiltesec}</h2>
-         <p className="p-sec">{PcustomData.porttexttre}</p>
+   
+
+    
+
+<div className="wrap-title-tre p">
+
+<span className="nummberp">1.</span>
+<h2 className="tile-sec p">{PcustomData.porttiltesec}</h2>
+         <p className="p-sec p">{PcustomData.porttexttre}</p>
+         <div className="wrap-links">
+         <a href="#" className="tosite">Till hemsidan</a>
+         </div>
+</div>
+
+
+
+ 
+
+
+
+ 
+ <div className="p-tre-wrap p">
+    <div className="wrap-wrap">
+ <span>E-handel</span>
+<span>Unik design</span>
+ <p className="p-sec p">{PcustomData.porttitletwo}</p>
+ </div>
+ </div>
+
+
+ 
+</div>
+</div>
+
+
+
+
+
+<div className="tre-sections-p" style={myStyleP}>
+
+<div className="tre-contain p">
+
+
+
+<div className="wrap-title-tre p">
+
+<span className="nummberp">2.</span>
+<h2 className="tile-sec p">{PcustomData.porttexttwo}</h2>
+         <p className="p-sec p">{PcustomData.portundertre}</p>
+
+         <div className="wrap-links">
+         <a href="#" className="tosite">Till hemsidan</a>
+         <a href="#" className="tosite g">GitHub</a>
+         </div>
 
 </div>
 
 
 
-   <div className="wrap-image-tree-p">
 
- <img src={PcustomData.portimg.sourceUrl} alt="frontimg"/>
- </div>
 
  <div className="p-tre-wrap">
-
- <p className="p-sec">{PcustomData.porttitletwo}</p>
- </div>
-
-
-
-</div>
-</div>
-
-
-
-
-
-<div className="tre-sections-p">
-
-<div className="tre-contain">
-
-<div className="wrap-title-tre">
-
-
-<h2 className="tile-sec">{PcustomData.porttexttwo}</h2>
-         <p className="p-sec">{PcustomData.portundertre}</p>
-
-</div>
-
-
-
-   <div className="wrap-image-tree-p">
-
- <img src={PcustomData.portimgsec.sourceUrl} alt="frontimg"/>
- </div>
-
- <div className="p-tre-wrap">
-
+ <div className="wrap-wrap">
+ <span>Next.js</span>
+<span>Headless Wordpress</span>
  <p className="p-sec">{PcustomData.portunderfour}</p>
+ </div>
  </div>
 
 

@@ -36,7 +36,7 @@ function Navigation(){
             <ul>
 
                 <li>
-                   <Link href="/tjanster">Tjänster</Link>
+                   <Link href="/kunskaper">Kunskaper</Link>
                 </li>
                 <li>
                 <Link href="/portfolio">Portfolio</Link>
