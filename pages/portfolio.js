@@ -1,6 +1,6 @@
 import Layout from "../src/components/Layout";
 import getAppCommonData from "../src/inc/data/appCommonData";
-import getHomeCommonData from "../src/inc/data/homePageData";
+import getHomeCommonData from "../src/inc/data/homepageData";
 import PortField from "../src/components/portfield";
 import Head from "next/head";
 
